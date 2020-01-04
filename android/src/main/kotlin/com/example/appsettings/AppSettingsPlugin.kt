@@ -68,6 +68,8 @@ class AppSettingsPlugin: MethodCallHandler {
       openSettings(Settings.ACTION_SOUND_SETTINGS)
     } else if (call.method == "app_settings") {
       openAppSettings()
+    } else if (call.method == "voice_settings") {
+      openSettings(Settings.ACTION_VOICE_INPUT_SETTINGS)
     }
   }
 }

@@ -54,4 +54,10 @@ class AppSettings {
   static Future<void> openAppSettings() async {
     _channel.invokeMethod('app_settings');
   }
+
+  /// Future async method call to open voice input settings
+  /// (opens normal settings on ios)
+  static Future<void> openVoiceInputSettings() async {
+    _channel.invokeMethod('voice_settings');
+  }
 }
